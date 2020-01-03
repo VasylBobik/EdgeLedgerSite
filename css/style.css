@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0.75rem 0;
+}
+
+/* Utility classes */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: #93cb52;
+}
+
+.l-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.m-heading {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.p {padding: 0.2rem;}
+.p-1 {padding: 1.5rem;}
+.p-2 {padding: 2rem;}
+.p-3 {padding: 3rem;}
+
+.py-1 {padding: 1.5rem 0;} 
+.py-2 {padding: 2rem 0;} 
+.py-3 {padding: 3rem 0;} 
+
+.lead {
+  font-size: 1.3rem;
+  margin: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  padding: 0.75rem 2.5rem;
+  border-bottom: #93cb52 1px solid;
+  border-top: #93cb52 1px solid;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #577930;
+  color: #fff;
+  border-bottom: #fff 1px solid;
+  border-top: #fff 1px solid;
+  transition: ease-in-out 0.5s;
+}
+
+
+.btn-wide {
+  margin-top: 1rem;
+}
+
+.btn-dark {
+  background: #333;
+  color: #fff;
+}
+
+.bg-primary {
+  background: #93cb52;
+}
+
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+
+/* Navbar */
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background: #333;
+  color: #fff;
+  z-index: 1;
+  padding: 1rem;
+  border-bottom: #93cb52 1px solid;
+  border-top: #93cb52 1px solid;
+  opacity: 0.96;
+}
+
+#navbar ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+#navbar ul li a {
+  color: #fff;
+  padding: 1.44rem 1rem;
+}
+
+#navbar ul li a:hover {
+  background: #93cb52;
+  color: #333;
+  font-weight: bold;
+  transition: ease-in-out 0.3s;
+}
+
+/* Shawcase */
+#showcase {
+  background: url(../img/showcase.jpg) no-repeat center center/cover;
+  height: 100vh;
+  margin-top: -4.2rem;
+  color: #fff;
+}
+
+#showcase .showcase-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  /* Overlay */
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(51, 51, 51, 0.404);
+}
+
+/* Section What We Do */
+#what .items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 1.5rem;
+}
+
+#what .items .item {
+  text-align: center;
+  justify-content: center;
+}
+
+#what .items .item i {
+  background: #93cb52;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+/* Section: Who We Are */
+#who {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+}
+
+.who-img {
+  background: url(../img/people.jpg) no-repeat center center/cover;
+}
+
+#who .list {
+  list-style: none;
+  padding: .5rem;
+}
+
+#who ul li {
+  padding: .5rem;
+  border-bottom:#93cb52 1px solid;
+}
+
+/* Section: Clients */
+#clients .container .grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+#clients .container .grid img {
+  width: 60%;
+}
+
+/* Section: contacts */
+#contact {
+  display: grid;
+  grid-template-columns: 3fr 5fr;
+}
+
+#contact .contact-form {
+  justify-content: center;
+  align-items: center;
+}
+
+
+#contact .contact-form label {
+  display: inline-block;
+  padding: 0.5rem 0;
+  width: 100%;
+}
+
+#contact .contact-form input {
+  display: block;
+  width: 100%;
+  font-size: 0.9rem;
+  padding: 0.2rem;
+}
+
+#contact .contact-form textarea {
+  display: block;
+  width: 100%;
+  height: 75px;
+  padding: 0.4rem;
+  font-size: 1.2rem;
+}
+
+#contact .contact-form input[type="submit"] {
+  padding: 0.75rem 0;
+}
